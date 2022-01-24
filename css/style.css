@@ -1,0 +1,116 @@
+/* 
+    This is a pretty dirty style.css, meant to be experimental right now,
+    while we refresh old knowledge, and learn new in CSS3+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500|Roboto:300');
+
+:root{
+    /* if rebeccapurpple was defined as HSL */
+    --hue: 270;
+    --sat: 50%;
+    --lit: 40%;
+    --hoverpurple: hsl(270, 100%, 67%);
+}
+
+html,
+body {
+    position: relative;
+    color: #212121;
+    min-height: 100%;
+}
+
+.bg-main {
+    width: 100%;
+    background-color:#111;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-graded {
+    width: 100%;
+    /* using gradients from https://uigradients.com */
+    background: #2b5876;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4e4376, #2b5876);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4e4376, #2b5876);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a:link {
+    text-decoration: none;
+    color: #F5CA36;
+}
+
+code,
+pre {
+    font-family: Consolas, sans-serif;
+    font-size: 1em;
+    color: #F5CA36;
+}
+
+label {
+    color: #fff;
+}
+
+input {
+    width: 100%;
+}
+
+body>main {
+    /* margin to account for nav bar */
+    /* margin-top: 85px; */
+    /* this margin below may cut off  your background too early footer nave */
+    /* margin-bottom: 60px; */
+}
+
+main>.container {
+    padding: 12.5%;
+    /*margin-bottom: 5rem;*/
+}
+
+main>.container-fluid,
+.container-lg {
+    padding-top: 60px;
+}
+
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon-branding {
+    padding-right: 1em;
+    max-height: 64px;
+}
+
+
+
+.alphaTest {
+    opacity: 0.9 !important;
+}
+.alpha-25{ opacity: 0.25 !important; }
+.alpha-50{ opacity: 0.5 !important; }
+
+.navbar-brand,
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.0em;
+    text-transform: uppercase;
+}
+.homeText{
+    font-size: 4.0em;
+}
+
+.minHeight {
+    min-height: 80vh;
+}
+
+form>div.row {
+    margin-bottom: 0.5em;
+}

@@ -1,1 +1,1 @@
-FS Web Development by DT Chris | DarkTown Studios
+Using GitHub from development IDE
